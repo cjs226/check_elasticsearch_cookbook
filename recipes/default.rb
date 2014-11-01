@@ -17,8 +17,9 @@ end
 ################################################################################
 git "#{node['check_elasticsearch']['install_dir']}/git/check_elasticsearch" do
   
-  revision   node['check_elasticsearch']['git']['branch']
   repository node['check_elasticsearch']['git']['repository']
+  revision   node['check_elasticsearch']['git']['branch']
+  
   notifies   :create, "file[#{node['check_elasticsearch']['install_dir']}/git/check_elasticsearch/check_elasticsearch]"
   notifies   :create, "link[#{node['check_elasticsearch']['install_dir']}/check_elasticsearch]"
   
