@@ -1,4 +1,4 @@
-name              "check_elasticsearch_cookbook"
+name              "check_elasticsearch"
 maintainer        "Clif Smith"
 maintainer_email  "clif@texicans.us"
 license           "Apache 2.0"
